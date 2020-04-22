@@ -1,0 +1,6 @@
+<!-- <block wx:for="{{readyData}}" wx:key="index">
+	<movie-list movieList="{{item}}" />
+</block> -->
+<movie-list movieList="{{inTheaters}}" />
+<movie-list movieList="{{comingSoon}}" />
+<movie-list movieList="{{top250}}" />

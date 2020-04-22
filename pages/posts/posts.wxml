@@ -1,0 +1,10 @@
+<view>
+	<swiper vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
+		<swiper-item wx:key="index" wx:for="{{headImg}}">
+			<image src="{{item.url}}"></image>
+		</swiper-item>
+	</swiper>
+	<block wx:for="{{postList}}" wx:key="index">
+		<posts-item postsItem="{{item}}" bindtap="onItemTap" data-postId="{{item.postId}}"></posts-item>
+	</block>
+</view>
